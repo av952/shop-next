@@ -8,7 +8,28 @@ export default function Product({ item, showAs }) {
     switch(showAs){
       case 'page':
         return(
-          <h3>Page</h3>
+          <div className={style.containerPage}>
+          <div>
+
+                <img className={style.imgPage} src={item.url} alt={item.title} />
+
+          </div>
+
+          <div className={style.descriptionPage}>
+           <div>
+            <h5>Your product</h5>
+
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum  </p>
+
+           </div>
+
+            <div className={style.pricePage}>
+            <h3 className={style.h31}>{`$ ${item.id}`}</h3>
+            <span className={style.cartPage}><i className="bi bi-basket"></i></span>
+            </div>
+
+          </div>
+        </div>
         )
 
       case 'list':

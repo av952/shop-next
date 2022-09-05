@@ -12,7 +12,7 @@
     width:95%;
     background-color: white;
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .title{
     text-align: center;
@@ -49,4 +49,57 @@
         grid-template-columns: repeat(2,1fr);
         
     }
+}
+
+
+/*Page*/
+
+.containerPage{
+    display: grid;
+    background-color: white;
+    width: 90%;
+    align-items: center;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.imgPage{
+    width: 90%;
+    display: block;
+    margin: auto auto;
+    padding: 0.2rem;
+    flex-grow: 2;
+}
+.descriptionPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.descriptionPage>div{
+    word-wrap: break-word;
+}
+.cartPage {
+    font-size: 2rem;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.cartPage>i{
+    cursor: pointer;
+}
+.pricePage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:600px){
+
+    .containerPage{
+        display: block;
+    }
+
 }
