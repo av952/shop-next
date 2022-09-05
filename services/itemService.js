@@ -1,3 +1,5 @@
+/* Encargado de extraer la información  de la url*/
+
 export async function getItems(){
     const request  = await fetch('https://jsonplaceholder.typicode.com/photos/')
     const items  = await request.json()

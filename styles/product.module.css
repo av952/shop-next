@@ -1,0 +1,52 @@
+/* llamado desde store/index */
+
+.productContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+/* fin */
+
+.container{
+    width:95%;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.title{
+    text-align: center;
+}
+
+.img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.h31{
+    text-align: center;
+    margin: auto auto;
+}
+
+
+.cart{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+@media  (max-width:600px) {
+    .productContainer{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
