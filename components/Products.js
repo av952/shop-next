@@ -1,12 +1,27 @@
 import Link from "next/link";
+import { convertToPath } from "../lib/utils";
 import style from '../styles/product.module.css'
 
 export default function Product({ item, showAs }) {
-  console.log("🚀 ~ file: Products.js ~ line 5 ~ Product ~ item", item)
+
+
+    switch(showAs){
+      case 'page':
+        return(
+          <h3>Page</h3>
+        )
+
+      case 'list':
+        return(
+          <h3>List</h3>
+        )
+    }
+
+
   return (
     <div className={style.container}>
       <div>
-        <Link href= {`/store/${item.id}`} >
+        <Link href= {`/store/${convertToPath(item.title)}`} >
           <a onClick={(el)=>console.log(item.id)}>
             <img className={style.img} src={item.url} alt={item.title} />
           </a>
