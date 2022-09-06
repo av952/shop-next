@@ -1,6 +1,7 @@
 import Head from "next/head"
 import style from '../styles/comp.module.css'
 import Menu from "./Menu"
+import ShoppingCart from "./ShoppingCart"
 
 export default function Layout({children,title}){ //children viene en todos los componentes
 
@@ -16,6 +17,7 @@ export default function Layout({children,title}){ //children viene en todos los 
 
         {/* Llmamos a children para renderizar los componentes que se encuentren dentro de layout*/}
         <div className={style.container}>{children}</div> 
+        <ShoppingCart/>
         
         </>
     )

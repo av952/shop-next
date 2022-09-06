@@ -66,3 +66,48 @@ export  async function getStaticPath(){
 }
 
 ```
+
+### Función para definir el contexto
+
+
+```javascript
+
+import { createContext } from "react"
+
+const AppContext = createContext({
+    isOpen:false,
+    openCart:()=>{}
+})
+
+export default function StateWrapper({children}){
+    const [isOpen,setisOpen] = useState(false)
+
+        function handleOpenCart(){
+        setisOpen(!isOpen)
+    }
+
+
+
+    return <diAppContext.Provider  isOpen, openCart:handleOpenCart >{children}</diAppContext.Provider>
+}
+
+
+export function useAppConext(){
+    return useContext(AppContext)
+}
+
+```
+
+* Forma de uso dentro del archivo que necesitemos hacer la invocación de los métodos y funciones
+
+```javascript
+import { useAppConext } from "./StateWrapper";
+
+export default function Menu() {
+  const cart = useAppConext();
+
+  return  <div>cart.id<div/>
+
+}
+
+```
