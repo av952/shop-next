@@ -23,7 +23,6 @@ export default function FAQ() {
         <h1>Et quia doloribus et iusto dolores. </h1>
         <p>
           Lorem ipsum dolor sit amet. Non illum eveniet{" "}
-
           quo internos modi? Eos corporis dolores 33 iure laborum rem officia
           possimus est saepe molestias a vero tempora hic velit deserunt! Aut
           internos commodi sed possimus provident est consequatur accusantium
@@ -35,14 +34,12 @@ export default function FAQ() {
           Ea doloribus internos ut rerum consectetur et consequuntur sunt. Sit
           cumque rerum aut assumenda galisum eum sapiente aspernatur et
           exercitationem unde et beatae laboriosam. Ab sint omnis{" "}
-
           et iusto temporibus.{" "}
         </p>
         <h3>Qui dolor quibusdam cum quia repudiandae maiores aperiam! </h3>
         <p>
           33 ipsa delectus sit vitae enim sit aliquid asperiores et beatae
           exercitationem sit sint doloribus! Dolor velit{" "}
-
           . Ut quia quia est magni harum est tenetur temporibus.{" "}
         </p>
       </div>
