@@ -1,0 +1,44 @@
+.shoppingCart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.total{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.empty{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    background-color: violet;
+    border-radius: 10px;
+    padding: 0.3rem;
+    cursor: pointer;
+    float: right;
+}
+
+.btn:hover{
+    filter: grayscale(1);
+}
+
+.total{
+    
+}
+

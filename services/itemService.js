@@ -10,5 +10,5 @@ export async function getItems(){
 export async function getLatestItems(){
     const items = await getItems()
 
-    return items.slice(0,6)
+    return items.slice(0,3)
 }

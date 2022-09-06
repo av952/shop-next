@@ -9,7 +9,7 @@
 /* fin */
 
 .container{
-    width:95%;
+    width:90%;
     background-color: white;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -81,7 +81,7 @@
     word-wrap: break-word;
 }
 .cartPage {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     flex-grow: 1;
     
@@ -102,4 +102,50 @@
         display: block;
     }
 
+}
+
+
+/* Lista con totales */
+
+.containerList{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(209, 206, 206);
+}
+
+.imgList{
+    max-width: 80px;
+    margin: auto 0;
+}
+
+.delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.btnsAdd {
+    display: grid;
+    justify-content: space-around;
+    margin: 0.2rem;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    
+}
+
+/*Index.js pages*/
+
+.bannerBackground{
+    background-image: url(https://images.pexels.com/photos/1292464/pexels-photo-1292464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 200px;
+    background-size: cover;
+    background-color: blueviolet;
+    color: white;
+    padding: 5%;
 }
